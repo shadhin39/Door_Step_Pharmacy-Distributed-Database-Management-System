@@ -9,7 +9,7 @@
  * **PL/SQL**
 
 # How to run "Door_Step_Pharmacy-Distribute-Database-Management-System"
-> For making the Database Distrubed, here "VMWare Workstation" is used as 'site' and Main PC is used as 'Server'
+> For making the Database as Distributed Distrubed, here "VMWare Workstation" is used as 'site' and Main PC is used as 'Server'
 > Make Modification(add ip and port number) according to your pc in 'Listener.ora(C:\oraclexe\app\oracle\product\10.2.0\server\NETWORK\ADMIN\listener.ora)' file  which is given in the repository.  
 > Modify the conn.sql file according to your pc and run it in your own system
 
