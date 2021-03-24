@@ -1,0 +1,11 @@
+SET SERVEROUTPUT ON;
+CREATE OR REPLACE TRIGGER Uptrig
+BEFORE Insert
+ON SellingDetails
+FOR EACH ROW
+BEGIN
+	DBMS_OUTPUT.PUT_LINE(chr(10));
+	DBMS_OUTPUT.PUT_LINE('Data are Inserted In SellingDetails(Calling Trigger)!!');
+	DBMS_OUTPUT.PUT_LINE(chr(10));
+END;
+/

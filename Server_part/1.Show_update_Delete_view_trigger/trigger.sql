@@ -1,0 +1,11 @@
+SET SERVEROUTPUT ON;
+CREATE OR REPLACE TRIGGER Uptrig
+AFTER UPDATE 
+ON Inventory
+FOR EACH ROW
+BEGIN
+	DBMS_OUTPUT.PUT_LINE(chr(10));
+	DBMS_OUTPUT.PUT_LINE('Data are Updated From Inventory(Calling Trigger)!!');
+	DBMS_OUTPUT.PUT_LINE(chr(10));
+END;
+/
